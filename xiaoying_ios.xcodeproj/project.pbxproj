@@ -12,7 +12,23 @@
 		A017749F231AB5E80089EA6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A017749D231AB5E80089EA6D /* Main.storyboard */; };
 		A01774A1231AB5E90089EA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01774A0231AB5E90089EA6D /* Assets.xcassets */; };
 		A01774A4231AB5E90089EA6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01774A2231AB5E90089EA6D /* LaunchScreen.storyboard */; };
+		A0C7C5E2231FFBE000FF7B78 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C7C5E1231FFBE000FF7B78 /* CryptoSwift.framework */; };
+		A0C7C5E3231FFBE000FF7B78 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0C7C5E1231FFBE000FF7B78 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0C7C5E0231FFA8A00FF7B78 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0C7C5E3231FFBE000FF7B78 /* CryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A0177496231AB5E80089EA6D /* xiaoying_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaoying_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,8 @@
 		A01774A0231AB5E90089EA6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A01774A3231AB5E90089EA6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A01774A5231AB5E90089EA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C7C5CA231FF77700FF7B78 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "CryptoSwift-master/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
+		A0C7C5E1231FFBE000FF7B78 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C7C5E2231FFBE000FF7B78 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +57,8 @@
 		A017748D231AB5E80089EA6D = {
 			isa = PBXGroup;
 			children = (
+				A0C7C5E1231FFBE000FF7B78 /* CryptoSwift.framework */,
+				A0C7C5CA231FF77700FF7B78 /* CryptoSwift.xcodeproj */,
 				A0177498231AB5E80089EA6D /* xiaoying_ios */,
 				A0177497231AB5E80089EA6D /* Products */,
 			);
@@ -74,6 +95,7 @@
 				A0177492231AB5E80089EA6D /* Sources */,
 				A0177493231AB5E80089EA6D /* Frameworks */,
 				A0177494231AB5E80089EA6D /* Resources */,
+				A0C7C5E0231FFA8A00FF7B78 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +303,7 @@
 		A01774A9231AB5E90089EA6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BNVZ4N3A6;
@@ -299,6 +322,7 @@
 		A01774AA231AB5E90089EA6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BNVZ4N3A6;
