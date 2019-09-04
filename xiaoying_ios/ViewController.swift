@@ -34,6 +34,7 @@ class ViewController: UIViewController {
             //开始解密
             let decrypted = try aes.decrypt(encrypted)
             print("解密结果：\(String(data: Data(decrypted), encoding: .utf8)!)")
+            
             print("md结果：\(String(data: Data(decrypted), encoding: .utf8)!.md5())")
         } catch { }
     }
